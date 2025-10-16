@@ -20,5 +20,5 @@ elif size == "L":
 if extra_cheese == "Y":
     cost += 1
 
-print(f"Your final bill is: ${cost}")
+print(f"Your final bill is: ${cost}.")
 
