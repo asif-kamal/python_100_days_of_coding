@@ -22,7 +22,7 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
-cross_road = input("Left or Right? Type 'left' or 'right'").lower()
+cross_road = input("You're at a cross roads. Left or Right? Type 'left' or 'right'").lower()
 if cross_road == "left":
     print("You chose well, continue!")
     cross_sea = input("Swim or sail? Type 'swim' or 'sail'").lower()
