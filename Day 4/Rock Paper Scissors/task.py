@@ -60,6 +60,8 @@ def rock_paper_scissors():
         elif computer_choice == scissors:
             print("Computer: \n" + computer_choice)
             print("You: \n" + scissors + "\nDraw!")
+    else:
+        print("Invalid choice!")
 
     play_again = input("Play again? Y/N: ").lower()
     if play_again == "y":
