@@ -27,6 +27,8 @@ while not game_over:
     guess = input("Guess a letter: ").lower()
 
     # TODO-4: - If the user has entered a letter they've already guessed, print the letter and let them know.
+    if guess in correct_letters:
+        print(f"You've already guessed the letter {guess}.")
 
     display = ""
 
@@ -36,7 +38,6 @@ while not game_over:
             correct_letters.append(guess)
         elif letter in correct_letters:
             display += letter
-            print(f"You've already guessed the letter {letter}.")
         else:
             display += "_"
 
