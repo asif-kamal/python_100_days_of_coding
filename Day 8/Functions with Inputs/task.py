@@ -1,6 +1,6 @@
-def print_three_times():
+def print_three_times(word):
     print("Hello")
-    print("Bello")
+    print(word)
     print("Bye")
 
-print_three_times()
+print_three_times("Bello")
