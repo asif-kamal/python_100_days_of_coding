@@ -4,14 +4,15 @@
 # TODO-4: Compare bids in dictionary
 import art
 
+
 print(art.logo)
 
 names_and_bids = {}
 
 def blind_auction():
-
+    print("Welcome to the Blind Auction!")
     name = input("What is your name? ")
-    bid_amount = float(input("What is your bid? "))
+    bid_amount = float(input("What is your bid? $"))
 
     names_and_bids[name] = bid_amount
 
@@ -21,12 +22,13 @@ def blind_auction():
     highest_bid = 0
 
     if more_bidders == 'yes':
+        print('\n' * 100)
         blind_auction()
     if more_bidders == 'no':
         for name, bid_amount in names_and_bids.items():
             if bid_amount > highest_bid:
                 highest_bid = bid_amount
                 highest_bidder = name
-        print(f"\nHighest bidder is {highest_bidder} with a bid amount of {highest_bid}")
+        print(f"\nHighest bidder is {highest_bidder} with a bid amount of ${highest_bid}")
 
 blind_auction()
