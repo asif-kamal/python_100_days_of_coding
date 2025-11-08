@@ -14,7 +14,7 @@ while game_play:
 
     if dictionary_A == {}:
         dictionary_A = random.choice(game_data.data)
-    print(f"Compare A: {dictionary_A.get('name')}, a {dictionary_A.get('description')} from {dictionary_A.get('country')}")
+    print(f"Compare A: {dictionary_A.get('name')}, a {dictionary_A.get('description')} from {dictionary_A.get('country')}", end='\r')
     print(f"{art.vs}", end='\r')
 
     dictionary_B = random.choice(game_data.data)
